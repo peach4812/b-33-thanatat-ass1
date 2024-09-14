@@ -37,5 +37,3 @@ public class IronMan
         Debug.Log($"{IronName} take {damage} damage hp: {IronHp}");
     }
 }
-
-
