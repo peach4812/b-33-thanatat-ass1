@@ -7,6 +7,8 @@ using UnityEngine;
 public class Main : MonoBehaviour
 
 {
+    public IronMan IronMan;
+    public CaptainAmerica CaptainAmerica;
     IronMan ironMan = new IronMan("Tony", 100, "Red");
     CaptainAmerica captainAmerica = new CaptainAmerica("Steven", 100, "Blue");
     void Start()
