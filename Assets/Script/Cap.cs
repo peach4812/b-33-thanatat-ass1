@@ -1,35 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 
-public class Cap
+public class CaptainAmerica : SuperHero
 {
-    public string CapName;
-    public int CapHp;
-    public string CapSuitColor;
-    private float capArmorStrength = 10f;
-
-    public Cap(string newName, int newHp, string newSuitColor)
-
-    //Attributes
+    public CaptainAmerica(string newName, int newHp, string newSuitColor) : base(newName, newHp, newSuitColor)
     {
-        CapName = newName;
-        CapHp = newHp;
-        CapSuitColor = newSuitColor;
+
     }
 
-    //constructor
     public void LeapAndJump()
     {
-        Debug.Log($"--------{CapName} is Leap and Jump!!!");
+        Debug.Log($"--------{Name} is Leap and Jump!!!");
+
     }
     public void ThrowShield()
     {
-        Debug.Log($"========={CapName} is Trowing Shield!!!");
-    }
-    public void TakeDamage(int damage)
-    {
-        CapHp -= damage;
-        Debug.Log($"{CapName} take {damage} damage hp: {CapHp}");
+        Debug.Log($"========={Name} is Trowing Shield!!!");
+
     }
 }
